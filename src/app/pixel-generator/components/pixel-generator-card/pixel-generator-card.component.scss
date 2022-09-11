@@ -1,0 +1,52 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.heart {
+  width: 548px;
+  height: 548px;
+}
+
+tr {
+  td:first-child {
+    border-left: none;
+  }
+}
+
+td {
+  background-color: #4b4b4b;
+  width: 11.1%;
+  position: relative;
+  //width: 11.1%;
+  height: 11.1%;
+}
+
+.frame {
+  background-color: greenyellow;
+}
+
+@media (max-width: 300px) {
+  .heart {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 301px) {
+  .heart {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 601px) {
+  .heart {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

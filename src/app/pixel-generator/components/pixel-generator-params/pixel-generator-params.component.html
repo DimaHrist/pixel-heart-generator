@@ -1,0 +1,20 @@
+<div class="button">
+  <button mat-raised-button
+          color="primary"
+          (click)="onClick()">
+    Generate!
+  </button>
+</div>
+<div class="params">
+  <div class="params__title">
+    <h4>Params:</h4>
+  </div>
+  <div class="params__toggles" [formGroup]="form">
+    <mat-slide-toggle formControlName="haveFrame">
+      With frame
+    </mat-slide-toggle>
+    <mat-slide-toggle formControlName="isDarkMode" [disabled]="!form.get('haveFrame')?.value">
+      Dark mode
+    </mat-slide-toggle>
+  </div>
+</div>
