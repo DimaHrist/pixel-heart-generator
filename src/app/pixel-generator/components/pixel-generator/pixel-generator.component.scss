@@ -1,0 +1,44 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  height: 750px;
+  width: 580px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 300px) {
+  .wrapper {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 301px) {
+  .wrapper {
+    height: 400px;
+    width: 270px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 601px) {
+  .wrapper {
+    height: 580px;
+    width: 460px;
+  }
+}
+
+
+
