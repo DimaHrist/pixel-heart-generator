@@ -22,14 +22,23 @@
 @media (max-width: 300px) {
   .wrapper {
     width: 270px;
-    height: 270px;
+    height: 500px;
+  }
+  .download {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media (max-width: 600px) and (min-width: 301px) {
   .wrapper {
-    height: 400px;
+    height: 500px;
     width: 270px;
+  }
+
+  .download {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -40,5 +49,12 @@
   }
 }
 
-
+.download {
+  padding-left: 16px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 

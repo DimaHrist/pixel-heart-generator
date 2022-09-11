@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PixelGeneratorService } from "../../pixel-generator.service";
 
 @Component({
@@ -14,12 +14,10 @@ export class PixelGeneratorCardComponent implements OnInit {
 
   constructor(
     private readonly pixelGeneratorService: PixelGeneratorService
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
-    // this.pixelGeneratorService.heartColor$.subscribe(() => {
-    //   document.getElementsByTagName('td')[0].style.backgroundColor = "#b71717"
-    // })
   }
 
 }

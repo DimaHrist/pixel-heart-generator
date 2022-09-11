@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PixelGeneratorService } from "../../pixel-generator.service";
+import { FormControl } from "@angular/forms";
 
 @Component({
   selector: 'app-pixel-generator',
@@ -8,6 +9,7 @@ import { PixelGeneratorService } from "../../pixel-generator.service";
 })
 export class PixelGeneratorComponent {
 
+  public imageFormat = new FormControl()
   private darkColors = [
     '#000000',
     '#005c34',

@@ -7,4 +7,19 @@
     class="params"
     (generate)="generate()">
   </app-pixel-generator-params>
+  <div class="download">
+    <mat-form-field>
+      <mat-label>Choose image format</mat-label>
+      <mat-select [formControl]="imageFormat">
+        <mat-option value="svg">svg</mat-option>
+        <mat-option value="png">png</mat-option>
+        <mat-option value="jpeg">jpeg</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button
+            [disabled]="true"
+            color="primary">
+      Download
+    </button>
+  </div>
 </div>
