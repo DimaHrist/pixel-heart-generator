@@ -19,6 +19,11 @@ export class PixelGeneratorComponent {
     '#023323',
     '#161344',
     '#520825',
+    '#343434',
+    '#232323',
+    '#310231',
+    '#421212',
+    '#273a34',
   ]
 
   constructor(private readonly pixelGeneratorService: PixelGeneratorService) { }

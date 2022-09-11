@@ -8,8 +8,8 @@ export class PixelGeneratorService {
 
   public haveFrame$ = new BehaviorSubject(true);
   public isDarkMode$ = new BehaviorSubject(false);
-  public heartColor$ = new BehaviorSubject('#000000');
-  public frameColor$ = new BehaviorSubject('red');
+  public heartColor$ = new BehaviorSubject('#ffffff');
+  public frameColor$ = new BehaviorSubject('#000000');
 
   constructor() { }
 }
